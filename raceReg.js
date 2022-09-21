@@ -14,12 +14,22 @@ do {
   runnerAge = Math.floor(Math.random() * 70);
 } while (runnerAge < 10);
 
-console.log(`Runner #: ${raceNumber}. Age: ${runnerAge}`);
-
 //second, check age
-  //if < 18: isAdult = false. earlyReg = "N/A". startTime = "12:30pm"
-  //else if >= 18: isAdult = true.
-    //if raceNumber < 500 earlyReg = true. startTime = "9:30am".
-    //else if raceNumber > 500 earlyReg = false. startTime = "11 am"
+if (runnerAge < 18) {  //if youth
+  isAdult = false;
+  earlyReg = "N/A";
+  startTime = "12:30pm"
+} else {  //if adult
+  isAdult = true;
+  if (raceNumber < 500) { //if raceNumber indicates early registration
+    earlyReg = true;
+    startTime = "9:30am";
+  } else {
+    earlyReg = false;
+    startTime = "11:00am";
+  }
+}
 
-//console.log raceNumber, runnerAge, earlyReg, and startTime.
+console.log(`Runner #: ${raceNumber}\n Age: ${runnerAge}\n Early Registration: ${earlyReg}\n Start time: ${startTime}`);
+
+//make second file to do this as a class
