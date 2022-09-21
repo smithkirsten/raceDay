@@ -6,7 +6,7 @@ do {
 } while (runnerAge < 10);
 
 //create class
-class runner {
+class Runner {
   constructor(number, age) {
     this.number = number;
     this.age = age;
@@ -34,11 +34,16 @@ class runner {
         }
         break;
     }
+  }
+}
 
+let runner1 = new Runner(raceNumber, runnerAge);
+
+console.log(runner1);
     //if isAdult is false, earlyReg = "N/A"
     //if isAdult is true
       //if number < 500 earlyReg = true. else false.
 
-}
+
 
 //print class object instance
