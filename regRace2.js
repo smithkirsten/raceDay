@@ -6,5 +6,15 @@ do {
 } while (runnerAge < 10);
 
 //create class
+class runner {
+  constructor(number, age) {
+    this.number = number;
+    this.age = age;
+    this.isAdult();
+    this.earlyReg();
+    this.startTime();
+  }
+  
+}
 
 //print class object instance
