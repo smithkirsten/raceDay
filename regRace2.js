@@ -14,7 +14,16 @@ class runner {
     this.earlyReg();
     this.startTime();
   }
-  
+  isAdult() {
+    this.age < 18 ? this.isAdult = false
+    : this.isAdult = true;
+  }
+  earlyReg(){
+
+  }
+  startTime() {
+
+  }
 }
 
 //print class object instance
