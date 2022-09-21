@@ -37,13 +37,6 @@ class Runner {
   }
 }
 
+//create runner
 let runner1 = new Runner(raceNumber, runnerAge);
-
 console.log(runner1);
-    //if isAdult is false, earlyReg = "N/A"
-    //if isAdult is true
-      //if number < 500 earlyReg = true. else false.
-
-
-
-//print class object instance
